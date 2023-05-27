@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Top part of webpage design (black bar with subsections) */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Header 1 style */
+header h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Section Styles */
+section {
+  margin: 50px 0;
+}
+
+/* Header 2 */
+section h2 {
+  margin: 5px;
+  font-size: 26px;
+  margin-left: 40px;
+}
+
+/* Header 3 */
+section h3 {
+  margin: 5px;
+  font-size: 18px;
+  margin-left: 40px;
+}
+
+/* Paragraphing */
+section p {
+  margin: 5px;
+  font-size: 14px;
+  margin-left: 40px;
+}
+
+
+
+/* Certifications */
+.certifications-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.certifications-content li {
+  margin-bottom: 10px;
+}
+
+/* Experience */
+.experience-content {
+  list-style-type: disc;
+  padding-left: 60px;
+  margin-top: 0;
+}
+
+.experience-content li {
+  margin-bottom: 10px;
+}
+
+/* Skills */
+.project-content {
+  list-style-type: disc;
+  padding-left: 60px;
+  margin-top: 0;
+}
+
+.project-content li {
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Highlight */
+@keyframes highlight {
+  0% {
+    background-color: transparent;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.highlight {
+  animation: highlight 1.5s infinite;
+}
+
+
+
+
+
+
+
+
+/* UNTOUCHED */
+
+
+/* About Section Styles */
+#about {
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.aboutContent {
+  text-align: center;
+}
+
+.about-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Experience Section Styles */
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.experience-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Education Section Styles */
+.education-item {
+  margin-bottom: 20px;
+}
+
+.education-item h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.education-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Skills Section Styles */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Contact Section Styles */
+#contact {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+
+/* Parallax Scrolling */
