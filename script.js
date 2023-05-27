@@ -44,5 +44,31 @@ for (var i = 0; i < coll.length; i++) {
 }
 
 
+// Collapsible name
+window.addEventListener('scroll', function() {
+  var name = document.getElementById('name');
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  var collapsingPoint = 0;
+
+  if (scrollPosition > collapsingPoint) {
+    var firstName = name.textContent.charAt(0);
+    var lastName = name.textContent.substring(name.textContent.length - 6);
+    name.textContent = firstName + "." + lastName;
+    name.classList.add('collapsed');
+  } else {
+    name.textContent = 'Brian Choong';
+    name.classList.remove('collapsed');
+  }
+});
+
+
+
+
+
+
+
+
+
+
 
 

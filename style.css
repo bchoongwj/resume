@@ -28,6 +28,23 @@ header {
   margin-top: 10px;
 }
 
+/* Collapsible name */
+#name {
+  margin: 0;
+  font-size: 28px;
+  transition: all 0.5s ease;
+  max-height: 100px;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  transition: 3s;
+}
+
+#name.collapsed {
+  max-height: 50px;
+}
+
+
 header h1 {
   margin: 0;
   font-size: 28px;
