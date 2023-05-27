@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: "Styrene A LC",sans-serif;
+  font-family: Arial,sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -13,16 +13,26 @@ body {
 
 /* Top part of webpage design (black bar with subsections) */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background: #333;
   color: #fff;
   padding: 20px;
+  z-index: 9999; /* Ensures the header appears above other elements */
 }
 
-/* Header 1 style */
+.border-content {
+  list-style-type: disc;
+  margin-top: 10px;
+}
+
 header h1 {
-  margin-bottom: 10px;
+  margin: 0;
   font-size: 28px;
 }
+
 
 nav ul {
   list-style: none;
@@ -56,7 +66,7 @@ section h2 {
 /* Header 3 */
 section h3 {
   margin: 5px;
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 40px;
 }
 
@@ -66,44 +76,6 @@ section p {
   font-size: 14px;
   margin-left: 40px;
 }
-
-
-
-/* Certifications */
-.certifications-item p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #555;
-}
-
-.certifications-content li {
-  margin-bottom: 10px;
-}
-
-/* Experience */
-.experience-content {
-  list-style-type: disc;
-  padding-left: 60px;
-  margin-top: 0;
-}
-
-.experience-content li {
-  margin-bottom: 10px;
-}
-
-/* Skills */
-.project-content {
-  list-style-type: disc;
-  padding-left: 60px;
-  margin-top: 0;
-}
-
-.project-content li {
-  margin-bottom: 10px;
-}
-
-
-
 
 /* Highlight */
 @keyframes highlight {
@@ -125,24 +97,79 @@ section p {
   animation: highlight 1.5s infinite;
 }
 
+/* Collapsible Container for Content*/
+.collapsible {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  margin: 5px;
+  margin-left: 35px;
+  font-weight: bold;
+    text-decoration: underline;
+      border: 2px solid #000000;
+      color: blue;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.collapsible:hover {
+  background-color: #f2f2f2;
+  /* Add any other hover styles you want */
+}
 
 
 
+/*~~~~~ Specialized parts ~~~~~*/
 
+/* Education Section Styles */
+.education-content {
+  margin-bottom: 20px;
+}
 
+.education-content p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
 
+/* Certifications */
+.certifications-content p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
 
-/* UNTOUCHED */
+.certifications-content li {
+  margin-bottom: 10px;
+}
+
+/* Section Content Styles */
+.resume-content {
+  list-style-type: disc;
+  padding-left: 60px;
+  margin-top: 0;
+}
+
+.resume-content li {
+  margin-bottom: 10px;
+}
+
 
 
 /* About Section Styles */
 #about {
-  padding: 20px;
+  padding: 30px;
   background-color: #f4f4f4;
   text-align: center;
 }
 
-.aboutContent {
+.about-content {
   text-align: center;
 }
 
@@ -152,40 +179,8 @@ section p {
   gap: 20px;
 }
 
-/* Experience Section Styles */
-.experience-item {
-  margin-bottom: 20px;
-}
-
-.experience-item h3 {
-  margin: 0;
-  font-size: 20px;
-}
-
-.experience-item p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #555;
-}
-
-/* Education Section Styles */
-.education-item {
-  margin-bottom: 20px;
-}
-
-.education-item h3 {
-  margin: 0;
-  font-size: 20px;
-}
-
-.education-item p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #555;
-}
-
 /* Skills Section Styles */
-.skills-list {
+/*.skills-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -201,6 +196,7 @@ section p {
   margin-bottom: 10px;
   font-size: 16px;
 }
+*/
 
 /* Contact Section Styles */
 #contact {
@@ -208,18 +204,18 @@ section p {
   background-color: #f4f4f4;
 }
 
-.contact-info {
+.contact-content {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.contact-info i {
+.contact-content i {
   margin-right: 10px;
   font-size: 20px;
 }
 
-.contact-info a {
+.contact-content a {
   color: #333;
   text-decoration: none;
   font-size: 16px;
@@ -227,4 +223,3 @@ section p {
 
 
 
-/* Parallax Scrolling */

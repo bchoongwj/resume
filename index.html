@@ -6,9 +6,9 @@
 </head>
 <body>
 <header>
-    <h1>Brian Choong</h1>
+        <h1>Brian Choong</h1>
     <nav>
-        <ul>
+        <ul class="border-content">
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#certifications">Certifications</a></li>
@@ -22,98 +22,98 @@
     <section id="about">
         <p><br></p>
         <h2>About</h2>
-        <p class="aboutContent">Placeholder for About</p>
-        <p class="aboutContent">Placeholder for About</p>
-        <p class="aboutContent">Placeholder for About</p>
+        <p class="about-content">Placeholder for About</p>
+        <p class="about-content">Placeholder for About</p>
+        <p class="about-content">Placeholder for About</p>
     </section>
     <section id="education">
-        <p><br></p>
         <h2>Education</h2>
         <h3>NTU</h3>
         <p class="education-content">Bachelor of Engineering (Bioengineering), Honours (Distinction)</p>
     </section>
     <section id="certifications">
-        <p><br></p>
         <h2>Certifications</h2>
         <h3>Hackwagon Academy</h3>
         <p class="certifications-content">Data Science 101: Introduction to Python Programming</p>
     </section>
     <section id="experience">
-        <p><br></p>
         <h2>Work Experience</h2>
         <h3>DBS</h3>
         <h3>Software Developer, Sept 2022 – ???</h3>
-        <ul class="experience-content">
+        <ul class="resume-content">
             <li>Get data from SQL DB, process data, put into CSV, automate sending to ADA via Tivoli Workload Scheduler calling a shellscript file every day</li>
             <li>Understand workflow process for code preparation such as code review -> Merge release branch -> UAT signoff -> OSS scan -> PTWT -> Deploy -> Merge master UAT</li>
             <li>Jira for deployment, Jenkins for CICD, Bitbucket as GitHub, Sourcetree as local GitHub</li>
             <li>Receive encrypted files and fields, decrypt file to base64, virus scan, validation checks, update sql table, get data from sql, return response, file processing, flag check for number of days, automated sending to downstream upon fulfilling certain conditions</li>
             <li>Liase with people for project specifications, crafting documentations, getting signoffs</li>
             <li>Coming up with test case scenarios and executing them for UAT</li>
-
         </ul>
+        <button class="collapsible">Non-tech Related</button>
+        <div class = "collapsible-content">
+            <h3>A*STAR (IBB)</h3>
+            <h3>Research Scientist Intern, Jan 2021 – Jul 2021</h3>
+            <ul class="resume-content">
+                <li>Passaged cancer cells for storage and future downstream testing</li>
+                <li>Designed primers for use in PCR and gel electrophoresis to target selected genes suspected of having mutations</li>
+                <li>Extracted DNA from cancer cells for PCR and gel electrophoresis for confirmation of amplified genes, purifying the products and Sanger Sequencing to identify mutations</li>
+                <li>Designed primers for use in qPCR using PrimerBlast to target selected genes to study and compare expression of genes in NPC tumour and EBV cells</li>
+                <li>Extracted RNA from tumour samples and performed cDNA synthesis for use in qPCR for comparing and normalizing gene expressions of said samples</li>
+                <li>Collated, organized, and normalized results on Excel, before presenting the results and my deductions to project members</li>
+            </ul>
+        </div>
         <p><br></p>
-        <h3>A*STAR (IBB)</h3>
-        <h3>Research Scientist Intern, Jan 2021 – Jul 2021</h3>
-        <ul class="experience-content">
-            <li>Passaged cancer cells for storage and future downstream testing</li>
-            <li>Designed primers for use in PCR and gel electrophoresis to target selected genes suspected of having mutations</li>
-            <li>Extracted DNA from cancer cells for PCR and gel electrophoresis for confirmation of amplified genes, purifying the products and Sanger Sequencing to identify mutations</li>
-            <li>Designed primers for use in qPCR using PrimerBlast to target selected genes to study and compare expression of genes in NPC tumour and EBV cells</li>
-            <li>Extracted RNA from tumour samples and performed cDNA synthesis for use in qPCR for comparing and normalizing gene expressions of said samples</li>
-            <li>Collated, organized, and normalized results on Excel, before presenting the results and my deductions to project members</li>
-        </ul>
     </section>
 
     <section id="projects">
-        <p><br></p>
         <h2>Projects</h2>
         <h3>Web-based Resume</h3>
         <h3>Self, May 2023</h3>
-        <ul class="project-content">
+        <ul class="resume-content">
             <li>HTML, CSS, and JavaScript</li>
             <li>Interactive resume with event listeners</li>
         </ul>
         <p><br></p>
         <h3>SEED Hackathon</h3>
         <h3>DBS, July 2022</h3>
-        <ul class="project-content">
+        <ul class="resume-content">
             <li>Collaborated in a team of 6 on GitHub to create a multi-currency web application wallet capable of simple features</li>
             <li>Developed the backend code for password authentication feature, deleting individual wallets, and transaction history table using JavaScript and SQL</li>
             <li>Cooperated with frontend developers on the code integration and managed their expectations of the backend code to ensure seamless integration</li>
             <li>Application was able to perform password authentication, create and delete individual wallets, currency conversion display and tracking transaction history</li>
         </ul>
+        <button class="collapsible">Non-tech Related</button>
+        <div class = "collapsible-content">
+            <h3>Medical Device Design (Uroflometer)</h3>
+            <h3>NTU, Aug 2021 – Dec 2021</h3>
+            <ul class="resume-content">
+                <li>Designed and created a more efficient uroflowmetry tool for measuring urine volume expelled by patients</li>
+                <li>Design was drawn on CAD and subsequently 3D printed and assembled to complete the device</li>
+                <li>Developed the C++ code for Arduino Uno, with RFID key activation, LCD screen functionality, LED bulb, and interfacing with Raspberry Pi for measuring urine volume via machine learning</li>
+            </ul>
+            <p><br></p>
+            <h3>Precision Anti-Cancer Therapy (Undergraduate Research Program, URECA)</h3>
+            <h3>NTU, Aug 2021 – Dec 2021</h3>
+            <ul class="resume-content">
+                <li>Researched and hypothesized on chemical and ligase methods for attachment of proteins and enzymes to Raji B and NK cells to allow more effective detection and elimination of cancer cells </li>
+                <li>Cultured Raji B cells for virus transfection to express cancer-specific signal proteins for better cancer cell detection</li>
+                <li>Artificially modified T cells by attaching linker proteins that gives higher specificity for cancer cells for more better cancer cell detection and elimination</li>
+                <li>Efficiently executed wet lab techniques of attaching proteins and enzymes to Raji B and NK cells to test hypothesis</li>
+                <li>Tested efficiency of cancer cell detection and elimination by incubating the cells together and determining cancer cell survival rate</li>
+                <li>Performed Western blotting to identify engineered proteins on CAR T-cell surfaces to determine successful expression on the cells, via transduction, to enable better cancer cell targeting</li>
+            </ul>
+            <p><br></p>
+            <h3> Data Analysis of Pandemic Control</h3>
+            <h3>NTU, Mar 2020 – Apr 2020</h3>
+            <ul class="resume-content">
+                <li>Identified variables affecting life expectancy of countries to identify pivotal variables in improving a country’s life expectancy using Python (numpy, pandas, and seaborn)</li>
+                <li>Analysed data for variables affecting countries' efficiency in preventing deaths through a sample disease to identify core variables present in countries that can handle pandemics</li>
+                <li>Compiled, cleaned, and organized data from multiple sources for easier comprehension and comparison and presenting the data visually with seaborn</li>
+            </ul>
+        </div>
         <p><br></p>
-        <h3>Medical Device Design (Uroflometer)</h3>
-        <h3>NTU, Aug 2021 – Dec 2021</h3>
-        <ul class="project-content">
-            <li>Designed and created a more efficient uroflowmetry tool for measuring urine volume expelled by patients</li>
-            <li>Design was drawn on CAD and subsequently 3D printed and assembled to complete the device</li>
-            <li>Developed the C++ code for Arduino Uno, with RFID key activation, LCD screen functionality, LED bulb, and interfacing with Raspberry Pi for measuring urine volume via machine learning</li>
-        </ul>
-        <p><br></p>
-        <h3>Precision Anti-Cancer Therapy (Undergraduate Research Program, URECA)</h3>
-        <h3>NTU, Aug 2021 – Dec 2021</h3>
-        <ul class="project-content">
-            <li>Researched and hypothesized on chemical and ligase methods for attachment of proteins and enzymes to Raji B and NK cells to allow more effective detection and elimination of cancer cells </li>
-            <li>Cultured Raji B cells for virus transfection to express cancer-specific signal proteins for better cancer cell detection</li>
-            <li>Artificially modified T cells by attaching linker proteins that gives higher specificity for cancer cells for more better cancer cell detection and elimination</li>
-            <li>Efficiently executed wet lab techniques of attaching proteins and enzymes to Raji B and NK cells to test hypothesis</li>
-            <li>Tested efficiency of cancer cell detection and elimination by incubating the cells together and determining cancer cell survival rate</li>
-            <li>Performed Western blotting to identify engineered proteins on CAR T-cell surfaces to determine successful expression on the cells, via transduction, to enable better cancer cell targeting</li>
-        </ul>
-        <p><br></p>
-        <h3> Data Analysis of Pandemic Control</h3>
-        <h3>NTU, Mar 2020 – Apr 2020</h3>
-        <ul class="project-content">
-            <li>Identified variables affecting life expectancy of countries to identify pivotal variables in improving a country’s life expectancy using Python (numpy, pandas, and seaborn)</li>
-            <li>Analysed data for variables affecting countries' efficiency in preventing deaths through a sample disease to identify core variables present in countries that can handle pandemics</li>
-            <li>Compiled, cleaned, and organized data from multiple sources for easier comprehension and comparison and presenting the data visually with seaborn</li>
-        </ul>
     </section>
 
     <section id="skills">
-        <p><br></p>
         <h2>Skills</h2>
         <p class="skills-content">Java, Spring, API call</p>
         <p class="skills-content">SQL</p>
@@ -125,7 +125,6 @@
     </section>
 
     <section id="contact">
-        <p><br></p>
         <h2>Contact</h2>
         <p class="contact-content">Placeholder for About</p>
         <p class="contact-content">Placeholder for About</p>
